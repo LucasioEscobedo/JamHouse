@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  font-family: "Inter", sans-serif;
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 100%;        
+  z-index: 999;  
+}
+
+nav {
+  background-color: #ff7300;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;            
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 250px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+
+}
+
+nav ul li a {
+  position: relative;
+  padding-top: 25px;
+  transition: 300ms ease;
+}
+
+nav ul li:hover>a {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  display: block;
+}
+
+.menu li {
+  position: relative;
+}
+
+.submenu {
+  font-size: 18px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: #ff7300;
+  border: 1px solid #F2F2F2;
+  padding: 10px;
+  min-width: 120px;
+  z-index: 100;
+}
+.submenu li {
+  text-align: center;
+  padding: 10px;
+  padding-left: 10px;
+}
+.submenu li a {
+  color: black;
+}
+.submenu li a:hover {
+  color: #F2F2F2;
+}
+.dropdown:hover .submenu {
+  display: block;
+}
+
+section{
+  margin-top: 100px;
+}
+
+main {
+  font-family: "Inter", sans-serif;
+  background-color: #e4e4e4;
+  padding: 5px 100px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.parent {
+  margin-top: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 25px;
+  background-color: #e4e4e4;
+  justify-items: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.parent div {
+  background-color: #ffffff;
+  height: 360px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.div5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.div6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.div7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.div8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+footer {
+  background-color: brown;
+}
